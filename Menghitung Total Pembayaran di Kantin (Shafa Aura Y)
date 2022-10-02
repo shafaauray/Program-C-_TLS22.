@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long nomor, jumlah, total;
+    cout<<"Selamat Datang di Kantin Teknik"<<endl;
+    cout<<"-------------------------------"<<endl;
+    
+    cout<<"Menu Makanan: "<<endl;
+    cout<<"1.Seblak Rp 15000"<<endl;
+    cout<<"2.Nasi Goreng Rp 15000"<<endl;
+    cout<<"3.Minuman Rp 5000"<<endl;
+    
+    cout<<"-------------------------------"<<endl;
+    cout<<"Mau beli makanan nomor berapa?"<<endl;
+    cin>>nomor;
+        //proses//
+    switch(nomor){
+    case 1:
+    cout<<"1.Seblak : Rp 15000"<<endl;
+    cout<<"Mau beli berapa?"<<endl;
+    cin>>jumlah;
+    total=jumlah*15000;
+    cout<<"Total Harga:"<<total;
+    break;
+    case 2:
+    cout<<"2.Nasi Goreng : Rp 15000"<<endl;
+    cout<<"Mau beli berapa?"<<endl;
+    cin>>jumlah;
+    total=jumlah*15000;
+    cout<<"Total Harga:"<<total;
+    break;
+    case 3:
+    cout<<"3.Minuman"<<endl;
+    cout<<"Mau beli berapa?"<<endl;
+    cin>>jumlah;
+    total=jumlah*5000;
+    cout<<"Total Harga:"<<total;
+    break;
+    default:
+      cout<<"Salah Nomor"<<endl;
+  }
+    return 0;
+}
